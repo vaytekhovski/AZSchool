@@ -30997,11 +30997,14 @@ a.u-link.u-text-hover-grey-90:hover {
         }
         h6
         {
-        font-weight: 400;
-        font-size: 1.125rem;
+        font-size: 1.5rem;
         line-height: 1.2;
         margin-top: 20px;
         margin-bottom: 20px;
+        font-weight: 700;
+        list-icon-spacing: 0.3;
+        list-icon-size: 0.8;
+        font-family: Oswald, sans-serif;
         }
         p.u-large-text
         {
@@ -31019,6 +31022,10 @@ a.u-link.u-text-hover-grey-90:hover {
         {
         margin-top: 20px;
         margin-bottom: 20px;
+        font-size: 0.875rem;
+        line-height: 1.6;
+        list-icon-spacing: 0.3;
+        list-icon-size: 0.8;
         }
         .u-btn
         {
@@ -31217,20 +31224,33 @@ a.u-link.u-text-hover-grey-90:hover {
 }
 
 .u-header .u-sheet-1 {
-  min-height: 72px;
-}
-
-.u-header .u-menu-1 {
-  font-family: size-14;
-  margin: 20px 0 0 auto;
-}
-
-.u-header .u-nav-2 {
-  font-size: 1.25rem;
+  min-height: 111px;
 }
 
 .u-header .u-image-1 {
-  margin: -32px auto 20px 0;
+  width: 300px;
+  height: 70px;
+  margin: 21px auto 0 0;
+}
+
+.u-header .u-menu-1 {
+  margin: -54px 0 0 auto;
+}
+
+.u-header .u-nav-1 {
+  font-size: 1rem;
+  letter-spacing: 0px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.u-header .u-nav-2 {
+  font-size: 1rem;
+  letter-spacing: 0px;
+}
+
+.u-header .u-image-2 {
+  margin: 36px auto 0 0;
 }
 
 .u-header .u-logo-image-1 {
@@ -31238,26 +31258,26 @@ a.u-link.u-text-hover-grey-90:hover {
   max-height: 64px;
 }
 @media (max-width: 1199px) {
-  .u-header .u-image-1 {
-    width: 31px;
+  .u-header .u-sheet-1 {
+    min-height: 111px;
+  }
+
+  .u-header .u-menu-1 {
+    width: auto;
+  }
+
+  .u-header .u-image-2 {
+    width: 64px;
     height: 32px;
   }
 }
-@media (max-width: 991px) {
-  .u-header .u-image-1 {
-    width: 24px;
-  }
-}
+
 @media (max-width: 767px) {
-  .u-header .u-image-1 {
-    width: 23px;
+  .u-header .u-image-2 {
+    width: auto;
   }
 }
-@media (max-width: 575px) {
-  .u-header .u-image-1 {
-    width: 19px;
-  }
-}
+
 .u-footer .u-sheet-1 {
   min-height: 133px;
 }
