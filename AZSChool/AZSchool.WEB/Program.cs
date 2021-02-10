@@ -15,7 +15,7 @@ namespace AZSchool.WEB
         public static void Main(string[] args)
         {
             var host = CreateWebHostBuilder(args)
-                //.UseUrls("http://*:9946")
+                .UseUrls("http://*:9946")
                 .Build();
 
 
