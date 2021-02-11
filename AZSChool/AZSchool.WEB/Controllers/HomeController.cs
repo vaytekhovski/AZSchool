@@ -59,5 +59,20 @@ namespace AZSchool.WEB.Controllers
             model.Error = "Не верный пароль!";
             return View(model);
         }
+
+        public IActionResult Student()
+        {
+            return View();
+        }
+
+        public IActionResult Student_InProgress()
+        {
+            return View();
+        }
+
+        public IActionResult Student_Done()
+        {
+            return View();
+        }
     }
 }
