@@ -33,5 +33,31 @@ namespace AZSchool.WEB.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+        
+        [HttpGet]
+        public IActionResult Login()
+        {
+            LoginModel loginModel = new LoginModel()
+            {
+                Error = "",
+                Login = "",
+                Password = "",
+            };
+            return View(loginModel);
+        }
+
+        [HttpPost]
+        public IActionResult Login(LoginModel model)
+        {
+            if(model.Login == model.Password)
+            {
+                if(model.Login == "teacher")
+                    return RedirectToAction("Teacher", "Home");
+                else if(model.Login == "student")
+                    return RedirectToAction("Student", "Home");
+            }
+            model.Error = "Не верный пароль!";
+            return View(model);
+        }
     }
 }
