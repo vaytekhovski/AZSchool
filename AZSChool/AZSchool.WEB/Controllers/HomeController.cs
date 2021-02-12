@@ -74,5 +74,19 @@ namespace AZSchool.WEB.Controllers
         {
             return View();
         }
+        public IActionResult Teacher()
+        {
+            return View();
+        }
+
+        public IActionResult Teacher_InProgress()
+        {
+            return View();
+        }
+
+        public IActionResult Teacher_Done()
+        {
+            return View();
+        }
     }
 }
